@@ -1,0 +1,147 @@
+/* Genel stil ayarları */
+body {
+    font-family: 'AnyDore', sans-serif;
+    background-color: #f5f5f5; /* Krem rengi arka plan */
+    margin: 0;
+    padding: 0;
+    color: #3c3c3c; /* Koyu gri yazılar */
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Arka plan fotoğrafı (haki ve kahverengi tonlarında) */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://source.unsplash.com/1600x900/?coding,technology,programming'); /* Teknoloji temalı fotoğraf */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Fotoğrafı bulanıklaştırır */
+    z-index: -1;
+}
+
+/* Header stili */
+header {
+    background-color: rgba(84, 76, 60, 0.9); /* Kahverengi ve haki tonlarında */
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+header .header-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    color: #e2d9c1; /* Krem rengi yazı */
+}
+
+header .header-content p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #d1c4b1; /* Hafif gri-krem rengi */
+}
+
+/* Form alanı ve buton */
+form {
+    background-color: rgba(84, 76, 60, 0.8); /* Kahverengi arka plan */
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+form input, form textarea {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #d1c4b1; /* Krem rengi sınırlar */
+    background-color: #fff;
+    color: #3c3c3c; /* Koyu gri metin rengi */
+}
+
+form textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+/* Buton stil */
+button {
+    background-color: #7b5f38; /* Kahverengi buton rengi */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #6a4b2b; /* Buton üzerine gelince kahverengi tonunun koyulaşması */
+}
+
+/* Diğer bölümler */
+section {
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(37, 37, 79, 0.9); /* Saydam arka plan */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    text-align: left;
+    position: relative;
+    background-color: rgba(184, 150, 106, 0.8); /* Haki ve kahverengi karışımı arka plan */
+}
+
+section img {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* Başlık stilleri */
+h2 {
+    color: #cfcfcf;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* İletişim formu başlık */
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Form içi input ve textarea stil */
+form input[type="text"], form input[type="email"], form textarea {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+/* Buton stil */
+button {
+    background-color: #7b5f38;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #6a4b2b;
+}
